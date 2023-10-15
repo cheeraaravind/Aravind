@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       console.log("These are the odden numbers by using continue statement");
+  for(i=1;i<=20;i++){
+    if(i%2==0)
+    continue;
+    console.log(i );
+     }
+       
+     console.log("These are the even numbers by using break statement");
+     for(i=1;i<=20;i++){
+    if(i%2!==0)
+    break;
+    console.log(i);
+     } 
+
+    console.log("Addition through function");
+     function add(a,b) {
+       sum=a+b;
+      return sum;
+      }
+      console.log (add(2,3));
+      console.log (add(5,8))
+      console.log (add(9,7))
+      console.log (add(2,2))
+
+
+
+
+
+    console.log("Finding even numbers through function");
+     function even() {
+      for(i=0;i<=20;i++){
+        if(i%2==0){
+          console.log(i)
+        }    
+    }
+  }
+  even()
+
+  console.log("muutiles of 5");
+  function mull() { 
+    for(i=1;i<=10;i++){
+        console.log( 5 + "x" + i + "=" + 5*i )
+    }
+  }
+mull( )
+
+      console.log("odd numbers from 30 to 1 by finction");
+    function odd( ) {
+    for(i=30;i>=1;i--){
+      if(i%2!==0){
+      console.log(i);
+      }
+    }
+     
+   }
+   odd()
+
+  
+
+
+
+    </script>
+</body>
+</html>
