@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+        class bank_account{
+          constructor(a,x,y,z){
+          this.Account_number=a;
+          this.blance=x;
+          this.deposit=y;
+          this.withdraw=z;
+          }
+          get(){
+            return this.Account_number;
+          }
+        }
+        var a=new bank_account("123","50","100","150 ")
+        var b=new bank_account("50","123","100","150")
+        console.log(a);
+        console.log(a.get());
+        console.log(b.get());
+
+
+
+
+
+        class temperature{
+            constructor(x,y,z,){
+                this.celsius=x;
+                this.fahrenheit=y;
+                this.kelivin=z;
+            }
+            set(){
+                return this.celsius;
+            }
+            grt(){
+                return this.celsius;
+            }
+        }
+              var a=new temperature("75","")
+
+
+
+
+
+
+
+        class TemperatureConverter {
+            constructor(tem) {
+                this._celsius = tem;
+            }
+            get celsius() {
+                return this._celsius;
+            }
+
+            set celsius(tvalue) {
+                this._celsius = tvalue;
+            }
+
+          
+
+            converttoFahrenheit() {
+                return (this.celsius * 9/5) + 32;
+            }
+
+            converttoKelvin() {
+                return this.celsius + 273.15;
+            }
+            }
+
+            let tempC = new TemperatureConverter(75);
+            //tempC.celsius = 50; 
+
+            console.log(`Celsius: ${tempC.celsius}`);
+            console.log(`Fahrenheit: ${tempC.converttoFahrenheit()}`);
+            console.log(`Kelvin: ${tempC.converttoKelvin()}`);
+    </script>
+</body>
+</html>

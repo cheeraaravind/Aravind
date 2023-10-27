@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+console.log("1.By using function create an object");
+ console.log(` var deatails={
+    name:"Aravin cheera",
+    batch:"94-r",
+    role:function () {
+        return "student";
+    }
+}`)
+    console.log("sol.student");
+
+    console.log(`2.How to get another value  by using function in that object`);
+     console.log(`; var Address={
+        H_no:"3-15/1",
+        village:"korkal",
+        dist:"kriminagar",
+        recall: function () {
+            return this.dist;
+             }
+    }`)
+    console.log(`sol.kariminagar`);
+
+    console.log(`3.How to create the nested objects `);
+      console.log(`    var cricket={
+                batsman:2,
+                filedres:11,
+             football:{
+                players:11,
+                goalkeeper:1,
+            }
+         }`)
+         console.log(`cricket.football.players. = 11`);
+
+         console.log(`4.How to declare the values objects in arrey`);
+       console.log(` var marks={
+              ssc:"8.0",
+              inter:"850",
+              b_tech:[
+                {m_1:"70",subjects:["M1","M2"]},
+              ]
+             }`)
+             console.log("sol.m1,m2");
+
+             console.log(`5.How to get only keys in objects`);
+             console.log(`var relme={
+                battery:"5000mah",
+                ram:"4gb"
+             }
+             var b=Object.keys(relme);`)
+             console.log(`battery,ram`);
+
+             console.log(`6.how to get only values in obects`);
+               console.log(` var body={
+                head:"one",
+                eyes:"two",
+             }
+              var b=Object.values(body)
+              console.log(b);`)
+              console.log(`sol.one,two`);
+
+              console.log("7.How to get values and keys at a time");
+            console.log(`  var marks={
+                Telugu:"75",
+                Hindhi:"70",
+                English:"85",
+                 }
+                var b=Object.entries(marks)
+                console.log(b);`)
+                console.log(`SOL.Telugu:"75",
+Hindhi:"70",
+ English:"85",`);
+
+            console.log(`8.How to use get in objects`);
+        console.log(`;    var legs={
+                man:"two",
+                horse:"four",
+                get demo () {
+                    return this.man ; 
+                }
+            }
+            console.log(legs.demo);`)
+            console.log(`sol.two`);
+
+            console.log();
+
+            console.log(`9.How to use the set in object`);
+          console.log(`;  var deatails={
+                name:"aravind",
+                batch:"94",
+                mobile_no:"",
+                set a (x){
+                    this.mobile_no =x;
+                 }
+            }
+            deatails.a="8179092840"
+            console.log(deatails);`)
+            console.log("mobile_no:8179092840");
+            
+             
+            
+
+
+        
+
+         
+             
+
+    </script>
+</body>
+</html>

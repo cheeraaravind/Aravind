@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("1.Give an example of an map");
+       console.log(`var a=[2,3]
+        var b=a.map((x)=>{
+           return x+2; 
+        });
+        console.log(b);`)
+    console.log("sol.4,5");
+
+    console.log("2.Give an example of filter");
+      console.log(` var a=[1,2,3,4,5]
+    var b=a.filter((x)=>{
+        return x>2;
+    })
+    console.log(b);`)
+    console.log("sol.3,4,5");
+
+    console.log("3.Difference b/w the for each and map");
+    var a=[1,2]
+   console.log(` a.forEach((x)=>{
+        console.log(x+2);
+    })`)
+    console.log("sol.3,4");
+
+    console.log("4.What is mean by reduce method");
+    var a=[1,2,3]
+    console.log(`  var b=a.reduce((x,y,z)=>{
+        return x+y+z;
+    },1)
+    console.log(b)`)
+    console.log("sol.10");
+
+    console.log('5.Find an max value in an arrey');
+    console.log(`var a=[1,2,3]
+    var b=a.reduce((x,y,z)=>{
+        return Math.max (x,y,z);
+    },4)
+    console.log(b);`)
+    console.log("sol.4");
+
+    console.log("6.Find the min value in an arrey");
+   console.log(` var a=[2,3,4]
+    var b=a.reduce((x,y,z)=>{
+        return  Math.min(x,y);
+    },1)
+    console.log(b);`)
+    console.log("sol.1");
+
+    console.log("7.Difference b/w the filter and find");
+  console.log(` var a=[1,2,3]
+    var b=a.find((x)=>{
+        return x>2;
+    })
+     console.log(b);`)
+     console.log("sol.3")
+
+     console.log("8.What is mean by some");
+      console.log(`var a=[1,2,3]
+     var b=a.some((x,y)=>{
+        console.log(y);
+     return x>1;
+     })
+     console.log(b);`)
+     console.log("sol.true");
+
+    </script>
+</body>
+</html>
