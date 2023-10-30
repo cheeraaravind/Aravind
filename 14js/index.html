@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           
+        
+    
+
+           setTimeout(() => {
+            console.log("chandhu");
+           }, 1000);
+
+
+          setInterval(() => {
+            console.log("setinterval");
+          }, 2000);
+
+
+          var a=0;
+          var b=setInterval(() => {
+            console.log(a++);
+            if (a===7) {
+            clearInterval(b)
+            }
+          }, 1000);
+
+
+        //  console.log("Give me an example of clear timeout");
+          
+        //   var b=setTimeout(() => {
+        //     console.log("aravind");
+        //   }, 1000);
+        //   clearTimeout(b)
+
+        console.log("Difference between the lexical and closure ");
+        function name() 
+           {
+          var a="Lexical";
+          function b() 
+           {
+            console.log (a);
+           }
+          return b();
+           }
+             name();
+
+
+             console.log("Differencec between the carying and arrow function");
+             function name(a) {
+              return  function(b) {
+                return function(c){
+                  return a*b+c;
+                }
+               }
+              }
+              console.log(name(2)(3)(6));
+              
+              console.log("What is mean by square brackets");
+              var a=/[ara]/i;
+              var b=a.test("aar");
+              console.log(b);
+
+              console.log("What is mean by open brackets");
+               var a=/(vind)/;
+               var b=a.test("aravind");
+               console.log(b);
+            
+          
+    </script>
+</body>
+</html>

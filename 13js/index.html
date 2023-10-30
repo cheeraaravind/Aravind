@@ -32,55 +32,72 @@
 
 
         class temperature{
-            constructor(x,y,z,){
-                this.celsius=x;
-                this.fahrenheit=y;
-                this.kelivin=z;
-            }
+            constructor(x){
+                this._celsius=x;
+              }
             set(){
-                return this.celsius;
-            }
-            grt(){
-                return this.celsius;
-            }
-        }
-              var a=new temperature("75","")
-
-
-
-
-
-
-
-        class TemperatureConverter {
-            constructor(tem) {
-                this._celsius = tem;
-            }
-            get celsius() {
                 return this._celsius;
             }
-
-            set celsius(tvalue) {
-                this._celsius = tvalue;
+            get(tvalue){
+                return this._celsius=tvalue;
             }
+        
 
-          
+              fahrenheit (){
+                return (this._celsius* 1.8)+32;
+              }
 
-            converttoFahrenheit() {
-                return (this.celsius * 9/5) + 32;
-            }
+              kelvin (){
+               return this._celsius  +  273.15;
+              }
+              }      
+              var a=new temperature(75)
 
-            converttoKelvin() {
-                return this.celsius + 273.15;
-            }
-            }
+              console.log(a);
+              console.log(a.fahrenheit());
+              console.log(a.kelvin());
 
-            let tempC = new TemperatureConverter(75);
-            //tempC.celsius = 50; 
 
-            console.log(`Celsius: ${tempC.celsius}`);
-            console.log(`Fahrenheit: ${tempC.converttoFahrenheit()}`);
-            console.log(`Kelvin: ${tempC.converttoKelvin()}`);
+
+
+
+
+                console.log("Static method  and inheritnance");
+
+              class classname{
+                constructor(num){
+                  this.num=num;
+                }
+                  static demo(num){
+                  return num*num;
+                 }
+                }
+                  class classname2 extends  classname{
+                    constructor(num){
+                        this.num=num;
+                    }
+                    static cube(num){
+                      return num*num*num;
+                    }
+                  }
+
+                  console.log(classname.demo(5));
+                  console.log(classname2.cube(5));
+              
+                  
+                  
+
+     
+
+
+
+                     
+  
+
+
+
+
+
     </script>
 </body>
 </html>
