@@ -58,11 +58,7 @@
               console.log(a.kelvin());
 
 
-
-
-
-
-                console.log("Static method  and inheritnance");
+            console.log("Static method  and inheritnance");
 
               class classname{
                 constructor(num){
@@ -83,15 +79,71 @@
 
                   console.log(classname.demo(5));
                   console.log(classname2.cube(5));
-              
-                  
-                  
+
+
+
+
+
+              class Shape {
+                static calculateArea()
+                {
+
+                }
+                static calculatePerimeter()
+                {
+
+                }
+              }
+              class Circle extends Shape{
+                constructor (r)
+                {
+                  super();
+                  this.r=r;
+                }
+                calculateArea()
+                {
+                  return Math.PI*this.r*this.r;
+                }
+                calculatePerimeter()
+                {
+                  return 2*Math.PI*this.r;
+                }
+              }
+              class square extends Shape{
+                constructor(l)
+                {
+                  super();
+                  this.l=l;
+                }
+                calculateArea()
+                {
+                  return this.l*this.l
+                }
+                calculatePerimeter()
+                {
+                  return 4*this.l;
+                }
+              }
+              let z=new Circle(3);
+              console.log(z.calculateArea());
+              console.log(z.calculatePerimeter());
+
+              let y=new square(5);
+              console.log(y.calculateArea());
+              console.log(y.calculatePerimeter());
+            
+
+ 
+
+                 
+                 
+                 
+                 
+
 
      
 
-
-
-                     
+         
   
 
 
