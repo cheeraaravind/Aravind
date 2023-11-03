@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .apple{
+        color: aqua;
+    }
+    
+    </style>
+</head>
+<body>
+
+<h1 >Aravind </h1>
+
+<h2 id="Aravind" >Chandhu </h2> 
+
+<h1 class="Aravind">Aravind</h1>
+<h1 class="Aravind">Aravind</h1>
+<h1 class="Aravind">Aravind</h1>
+ <h2 class="Aravind" >chandhu</h2> 
+
+<h3>Aravind</h3>
+
+<h4 class="two">two</h4>
+<h5 class="one">one</h5>
+
+<h6>
+    one
+</h6>
+
+<img src="../imges/2509173.jpg" alt="">
+
+
+
+
+
+    <script>
+          var a=document.getElementById("Aravind")
+          console.log(a);
+             
+          var b=document.getElementsByClassName("Aravind")
+              console.log(b[1]);
+
+              var c=document.getElementsByTagName("h3")
+              console.log(c[0]);
+
+              var d=document.querySelector(".Aravind")
+              console.log(d);
+
+              var e=document.querySelectorAll(".Aravind")
+              console.log(e);
+
+              e[0].style.color="red"
+
+              for(i=0;i<=e.length-1;i++){
+                console.log(e[i]);
+                if(i%2==0)
+                (
+                    e[i].style.color="red"
+                )
+                else
+                {
+                    e[i].style.color="green"
+                }
+              }
+
+              var f=document.getElementsByTagName("h6")
+              console.log(f[0]);
+              f[0].setAttribute("class","apple")
+              
+              var img=document.getElementsByTagName("img");
+                console.log(img[0].getAttribute("src"));
+                img[0].setAttribute("src","../imges/ashok chakara.png")
+                   
+                var age=1;
+                var type=month;
+                
+            if(type==month){
+                console.log("infant");
+            }
+        else if (type==year){
+            console.log("child");
+}
+else{console.log("loser");} 
+
+    
+
+
+              
+
+    </script>
+</body>
+</html>
